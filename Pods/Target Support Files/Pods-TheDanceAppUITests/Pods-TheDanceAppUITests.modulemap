@@ -1,0 +1,6 @@
+framework module Pods_TheDanceAppUITests {
+  umbrella header "Pods-TheDanceAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,66 @@
+PODS:
+  - Alamofire (4.8.2)
+  - CircleProgressBar (0.32)
+  - FacebookCore (0.7.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKCoreKit (5.2.3):
+    - FBSDKCoreKit/Basics (= 5.2.3)
+    - FBSDKCoreKit/Core (= 5.2.3)
+  - FBSDKCoreKit/Basics (5.2.3)
+  - FBSDKCoreKit/Core (5.2.3):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.2.3):
+    - FBSDKCoreKit (~> 5.0)
+  - GoogleSignIn (4.4.0):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.2.1):
+    - GoogleToolboxForMac/Defines (= 2.2.1)
+  - GoogleToolboxForMac/Defines (2.2.1)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.2.1)":
+    - GoogleToolboxForMac/DebugUtils (= 2.2.1)
+    - GoogleToolboxForMac/Defines (= 2.2.1)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.1)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.2.1)"
+  - GTMSessionFetcher/Core (1.2.2)
+  - SideMenu (5.0.3)
+  - Swifty360Player (0.2.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - CircleProgressBar (~> 0.32)
+  - FacebookCore
+  - FBSDKLoginKit
+  - GoogleSignIn
+  - SideMenu (~> 5.0.0)
+  - Swifty360Player (= 0.2.3)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CircleProgressBar
+    - FacebookCore
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - GoogleSignIn
+    - GoogleToolboxForMac
+    - GTMSessionFetcher
+    - SideMenu
+    - Swifty360Player
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
+  FacebookCore: 4eee98476cb37a485af5d337eb21f8cd5b3c7e6c
+  FBSDKCoreKit: 5154c35d9058fd7dfa0445ba19e194c4b172fc32
+  FBSDKLoginKit: dc98b6bf12334f1a42f28d0457fffc9aa3d1eca5
+  GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
+  GoogleToolboxForMac: b3553629623a3b1bff17f555e736cd5a6d95ad55
+  GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
+  SideMenu: 1dcaabce84538c53325c287f7fe62999379a641c
+  Swifty360Player: f389526a893a8ad1c0d4aaf84861db59b42cd2e3
+
+PODFILE CHECKSUM: 18c441c94efb07b0cdba353056bac2c1c97ef0a6
+
+COCOAPODS: 1.7.5
