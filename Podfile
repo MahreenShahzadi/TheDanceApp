@@ -24,7 +24,18 @@ pod 'SideMenu', '~> 5.0.0'
 pod 'GoogleSignIn'
 pod 'FacebookCore'
 pod 'CircleProgressBar', '~> 0.32’
-pod 'Swifty360Player', '0.2.3'
+pod 'DropDown'
+pod 'iOSDropDown'
+pod 'AlignedCollectionViewFlowLayout'
 
 
+
+
+
+end
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+    end
 end

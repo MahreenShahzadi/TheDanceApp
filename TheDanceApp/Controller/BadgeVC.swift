@@ -35,6 +35,10 @@ class BadgeVC: UIViewController {
         viewForBadgePopUp.alpha = 0
         
     }
+    @IBAction func bckBtnClk(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+    }
     
     @IBAction func crossBtnClk(_ sender: Any) {
         

@@ -52,37 +52,34 @@ class LogInVC: UIViewController,GIDSignInDelegate ,GIDSignInUIDelegate {
     
     
     override func viewWillAppear(_ animated: Bool) {
- 
+      navigationController?.navigationBar.isTranslucent = false 
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 248/255, green: 189/255, blue: 20/255, alpha: 1)
 //        AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
 
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-        
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 248/255, green: 189/255, blue: 20/255, alpha: 1)
+    override func viewDidAppear(_ animated: Bool)
+    {
+       self.navigationController?.navigationBar.barTintColor = UIColor(red: 248/255, green: 189/255, blue: 20/255, alpha: 1)
     }
 
-    @IBAction func forGotPassBtn(_ sender: Any) {
+    @IBAction func forGotPassBtn(_ sender: Any)
+    {
         
         
     }
     
-    
-    @IBAction func logInBtnClick(_ sender: Any) {
-        
-        if (userNameTF.text?.isEmpty)! || (passTF.text?.isEmpty)!{
+    @IBAction func logInBtnClick(_ sender: Any)
+    {
+       if (userNameTF.text?.isEmpty)! || (passTF.text?.isEmpty)!
+       {
             
         self.displayMyAlertMessage(userMessage: "Enter Email and Password")
             
         }
-        
-    
         let  VC = self.storyboard?.instantiateViewController(withIdentifier: "GuidedTourVC") as? GuidedTourVC
         self.navigationController?.pushViewController(VC!, animated: true)
-        
     }
     
     @IBAction func signupBtnClick(_ sender: Any) {
@@ -92,7 +89,6 @@ class LogInVC: UIViewController,GIDSignInDelegate ,GIDSignInUIDelegate {
     }
     
     @IBAction func fbLoginBtnclick(_ sender: UIButton) {
-        
         
         let fbLoginManager : LoginManager = LoginManager()
         fbLoginManager.logIn(permissions: ["email"], from: self) { (result, error) in
@@ -107,11 +103,12 @@ class LogInVC: UIViewController,GIDSignInDelegate ,GIDSignInUIDelegate {
         }
     }
     
-    func loginButtonDidLogout(_logInBtn: FBLoginButton!){
-        
+    func loginButtonDidLogout(_logInBtn: FBLoginButton!)
+    {
         print("User logOut")
     }
-    func GetFbUserData(){
+    func GetFbUserData()
+    {
         if((AccessToken.current) != nil){
             
             GraphRequest(graphPath: "me", parameters: ["fields":"id , name,first_name,last_name,picture.type(large),email"]).start(completionHandler:{(conntion , result,error ) -> Void in
@@ -158,12 +155,12 @@ class LogInVC: UIViewController,GIDSignInDelegate ,GIDSignInUIDelegate {
                      withError error: Error!) {
         if (error == nil) {
             // Perform any operations on signed in user here.
-            let userId = user.userID                  // For client-side use only!
-            let idToken = user.authentication.idToken // Safe to send to the server
-            let fullName = user.profile.name
-            let givenName = user.profile.givenName
-            let familyName = user.profile.familyName
-            let email = user.profile.email
+//            let userId = user.userID                  // For client-side use only!
+//            let idToken = user.authentication.idToken // Safe to send to the server
+//            let fullName = user.profile.name
+//            let givenName = user.profile.givenName
+//            let familyName = user.profile.familyName
+//            let email = user.profile.email
             // ...
         } else {
             print("\(String(describing: error))")

@@ -21,12 +21,27 @@ class VideoSectionTblVC: UIViewController {
         let hidePopUpTap = UITapGestureRecognizer(target: self, action: #selector(self.handelPopUpView(_:)))
         viewForPopUp.addGestureRecognizer(hidePopUpTap)
         viewForPopUp.isUserInteractionEnabled = true
+      
         
     }
     override func viewWillAppear(_ animated: Bool) {
+        
+//        let attributes = [NSAttributedString.Key.font:  UIFont(name: "OpenSans-Bold", size: 10.0)!, NSAttributedString.Key.foregroundColor: UIColor.white]
+//
+//        self.navigationController!.navigationBar.titleTextAttributes = attributes
+        
+       
+
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 248/255, green: 189/255, blue: 20/255, alpha: 1)
                
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+//        UINavigationBar.appearance().titleTextAttributes = [
+//            NSAttributedString.Key.font: UIFont(name: "OpenSans-Bold", size: 10)!
+//        ]
     }
     
     
@@ -38,15 +53,13 @@ class VideoSectionTblVC: UIViewController {
     
     @IBAction func getPremimBtn(_ sender: Any) {
         
-        
-        
     }
    
     
     @IBAction func backBtnClk(_ sender: Any) {
         
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MenuVC") as! MenuVC
-        navigationController?.pushViewController(vc, animated: true)
+       navigationController?.popViewController(animated: true
+        )
         
     }
     

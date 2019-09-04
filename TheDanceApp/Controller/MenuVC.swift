@@ -14,9 +14,9 @@ class MenuVC: UIViewController {
     
     @IBOutlet weak var menutableView: UITableView!
     
-    let titleArray = ["Home","profile","Guided Tour","Feedback","Badges","Notification","upgrade premium","Logout"]
-    let imgArray = [#imageLiteral(resourceName: "home_icon"),#imageLiteral(resourceName: "profile_icon"),#imageLiteral(resourceName: "guided_icon"),#imageLiteral(resourceName: "feedback_icon"),#imageLiteral(resourceName: "badges"),#imageLiteral(resourceName: "notification_drawer"),
-            #imageLiteral(resourceName: "upgrade_icon"),#imageLiteral(resourceName: "logout_drawer")]
+    let titleArray = ["Home","Dance Floor","Lesson","profile","Feedback","Badges","Notification","Logout"]
+    let imgArray = [#imageLiteral(resourceName: "home_icon"),#imageLiteral(resourceName: "guided_icon"),#imageLiteral(resourceName: "guided_icon"),#imageLiteral(resourceName: "profile_icon"),#imageLiteral(resourceName: "feedback_icon_drawer"),
+            #imageLiteral(resourceName: "badges"),#imageLiteral(resourceName: "notification_drawer"),#imageLiteral(resourceName: "logout_drawer")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,42 +53,49 @@ extension MenuVC:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             
-            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC") as? HomeVC
+            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "GuidedTourVC") as? GuidedTourVC
             self.navigationController?.pushViewController(VC!, animated: true)
         }
         
         if indexPath.row == 1 {
             
-            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as? ProfileVC
+            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "BillieJean_main_VC") as? BillieJean_main_VC
             self.navigationController?.pushViewController(VC!, animated: true)
             
             
         }
         if indexPath.row == 2 {
             
-            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "GuidedTourVC") as? GuidedTourVC
+            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC") as? HomeVC
             self.navigationController?.pushViewController(VC!, animated: true)
         }
        
         if indexPath.row == 3 {
             
-            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "FeedbackVC") as? FeedbackVC
+            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as? ProfileVC
             self.navigationController?.pushViewController(VC!, animated: true)
             
         }
         
         if indexPath.row == 4 {
             
-            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "BadgeVC") as? BadgeVC
+            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "FeedbackVC") as? FeedbackVC
             self.navigationController?.pushViewController(VC!, animated: true)
             
         }
         
         if indexPath.row == 5 {
             
-            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "NotificationVC") as? NotificationVC
+            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "BadgeVC") as? BadgeVC
             self.navigationController?.pushViewController(VC!, animated: true)
            
+        }
+        
+        if indexPath.row == 6 {
+            
+            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "NotificationVC") as? NotificationVC
+            self.navigationController?.pushViewController(VC!, animated: true)
+            
         }
         
     }

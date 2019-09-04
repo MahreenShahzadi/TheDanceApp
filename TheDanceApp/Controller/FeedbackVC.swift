@@ -19,6 +19,9 @@ class FeedbackVC: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
+    @IBAction func bckBtnClk(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     @IBAction func sendFeedBackBtn(_ sender: Any) {
         
         

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66215F7C230BB8E700A3FAB2 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66215F7B230BB8E600A3FAB2 /* OpenSans-Regular.ttf */; };
+		6664366C2311AF320086644B /* SectionVCCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6664366B2311AF310086644B /* SectionVCCellTableViewCell.swift */; };
 		6676F22E22E1E22A00572446 /* notifiTblCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6676F22D22E1E22A00572446 /* notifiTblCellClass.swift */; };
 		667AA98222DCA35B00A84D89 /* MenuVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667AA98122DCA35B00A84D89 /* MenuVCCell.swift */; };
 		667AA98422DCA3B200A84D89 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667AA98322DCA3B200A84D89 /* MenuVC.swift */; };
@@ -30,13 +32,16 @@
 		667EE13422DC949100B7E149 /* HomeVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667EE13322DC949100B7E149 /* HomeVCCell.swift */; };
 		667FAB6622DD883100A02354 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667FAB6522DD883100A02354 /* NotificationVC.swift */; };
 		667FAB6822DD885D00A02354 /* NotificationVcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667FAB6722DD885D00A02354 /* NotificationVcCell.swift */; };
-		6698C22322DF3D9800E4AB1B /* BillieJean(main)VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6698C22222DF3D9800E4AB1B /* BillieJean(main)VC.swift */; };
+		6682B032231CE9B700B4C1A1 /* BillieJean(main)VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6698C22222DF3D9800E4AB1B /* BillieJean(main)VC.swift */; };
+		6682D5CC230D47F70099A7BD /* SectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682D5CB230D47F70099A7BD /* SectionVC.swift */; };
 		6698C22522DF417D00E4AB1B /* TblViewCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6698C22422DF417D00E4AB1B /* TblViewCellVC.swift */; };
 		669D477222EF2210002E7291 /* 360Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 669D477122EF2210002E7291 /* 360Video.mp4 */; };
 		66A9D33922E585F200DE869C /* CommonFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A9D33822E585F200DE869C /* CommonFunction.swift */; };
+		66B597992312E693004C91AD /* LyrcCollViewCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B597982312E693004C91AD /* LyrcCollViewCellVC.swift */; };
 		66BE3E3422E58E72009E542F /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE3E3322E58E72009E542F /* Alerts.swift */; };
 		66DC36A222E598D800C0BFDF /* GuidedTourVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC36A122E598D800C0BFDF /* GuidedTourVC.swift */; };
 		66E342E422E71EAB00E326BC /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66E342E322E71EAB00E326BC /* credentials.plist */; };
+		66F07D442313BE13009FC3FC /* AnimatedVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 66F07D432313BE12009FC3FC /* AnimatedVideo.mp4 */; };
 		C50563D2B271C4186FFC593B /* Pods_TheDanceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1A44F35C60079D3A039884 /* Pods_TheDanceApp.framework */; };
 		D8A9D7E58F749AC6C02858F7 /* Pods_TheDanceAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3463B4C2C510289EC975A8E3 /* Pods_TheDanceAppTests.framework */; };
 		FE21B283D2284D9CB67AEAAC /* Pods_TheDanceAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB575FBB1A16A895C6D0631 /* Pods_TheDanceAppUITests.framework */; };
@@ -63,6 +68,8 @@
 		09EBB90B0A909AFADFB0C6DE /* Pods-TheDanceAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheDanceAppUITests.release.xcconfig"; path = "Target Support Files/Pods-TheDanceAppUITests/Pods-TheDanceAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3463B4C2C510289EC975A8E3 /* Pods_TheDanceAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheDanceAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		608610595DAAB2A966AF61E6 /* Pods-TheDanceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheDanceApp.debug.xcconfig"; path = "Target Support Files/Pods-TheDanceApp/Pods-TheDanceApp.debug.xcconfig"; sourceTree = "<group>"; };
+		66215F7B230BB8E600A3FAB2 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		6664366B2311AF310086644B /* SectionVCCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionVCCellTableViewCell.swift; sourceTree = "<group>"; };
 		6676F22D22E1E22A00572446 /* notifiTblCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notifiTblCellClass.swift; sourceTree = "<group>"; };
 		667AA98122DCA35B00A84D89 /* MenuVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVCCell.swift; sourceTree = "<group>"; };
 		667AA98322DCA3B200A84D89 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
@@ -92,13 +99,16 @@
 		667EE13322DC949100B7E149 /* HomeVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCCell.swift; sourceTree = "<group>"; };
 		667FAB6522DD883100A02354 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		667FAB6722DD885D00A02354 /* NotificationVcCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVcCell.swift; sourceTree = "<group>"; };
+		6682D5CB230D47F70099A7BD /* SectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionVC.swift; sourceTree = "<group>"; };
 		6698C22222DF3D9800E4AB1B /* BillieJean(main)VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BillieJean(main)VC.swift"; sourceTree = "<group>"; };
 		6698C22422DF417D00E4AB1B /* TblViewCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TblViewCellVC.swift; sourceTree = "<group>"; };
 		669D477122EF2210002E7291 /* 360Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 360Video.mp4; sourceTree = "<group>"; };
 		66A9D33822E585F200DE869C /* CommonFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFunction.swift; sourceTree = "<group>"; };
+		66B597982312E693004C91AD /* LyrcCollViewCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyrcCollViewCellVC.swift; sourceTree = "<group>"; };
 		66BE3E3322E58E72009E542F /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		66DC36A122E598D800C0BFDF /* GuidedTourVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidedTourVC.swift; sourceTree = "<group>"; };
 		66E342E322E71EAB00E326BC /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		66F07D432313BE12009FC3FC /* AnimatedVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AnimatedVideo.mp4; sourceTree = "<group>"; };
 		963EF2A8C0FA050AAA8597C6 /* Pods-TheDanceAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheDanceAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TheDanceAppUITests/Pods-TheDanceAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0BBCC594D94924AFC53C574 /* Pods-TheDanceAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheDanceAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TheDanceAppTests/Pods-TheDanceAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BEB575FBB1A16A895C6D0631 /* Pods_TheDanceAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheDanceAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +158,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		66215F7A230BB8C000A3FAB2 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				66215F7B230BB8E600A3FAB2 /* OpenSans-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		667EE0EE22DC48F000B7E149 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				669D477122EF2210002E7291 /* 360Video.mp4 */,
+				66F07D432313BE12009FC3FC /* AnimatedVideo.mp4 */,
+				66215F7A230BB8C000A3FAB2 /* Font */,
 				66E342E322E71EAB00E326BC /* credentials.plist */,
 				667EE12F22DC89DC00B7E149 /* UIViewExtentions.swift */,
 				667EE12A22DC595100B7E149 /* Views */,
@@ -223,6 +243,7 @@
 				6698C22222DF3D9800E4AB1B /* BillieJean(main)VC.swift */,
 				667CA01022DE034200CBD486 /* FeedbackVC.swift */,
 				667CA00C22DDFCB000CBD486 /* VideoSectionTblVC.swift */,
+				6682D5CB230D47F70099A7BD /* SectionVC.swift */,
 				667CA00822DDED2C00CBD486 /* ProfileVC.swift */,
 				667EE12D22DC88CF00B7E149 /* SignUpVC.swift */,
 				667AA98322DCA3B200A84D89 /* MenuVC.swift */,
@@ -239,8 +260,10 @@
 				667FAB6722DD885D00A02354 /* NotificationVcCell.swift */,
 				667CA00622DDE9DA00CBD486 /* BadgeVCCell.swift */,
 				6698C22422DF417D00E4AB1B /* TblViewCellVC.swift */,
+				6664366B2311AF310086644B /* SectionVCCellTableViewCell.swift */,
 				6676F22D22E1E22A00572446 /* notifiTblCellClass.swift */,
 				667CA00E22DDFCD900CBD486 /* VideoSectionTblVCCell.swift */,
+				66B597982312E693004C91AD /* LyrcCollViewCellVC.swift */,
 				667AA98122DCA35B00A84D89 /* MenuVCCell.swift */,
 				667EE0FE22DC48F000B7E149 /* Main.storyboard */,
 				667EE10122DC48F200B7E149 /* Assets.xcassets */,
@@ -371,6 +394,8 @@
 				66E342E422E71EAB00E326BC /* credentials.plist in Resources */,
 				667EE10222DC48F200B7E149 /* Assets.xcassets in Resources */,
 				669D477222EF2210002E7291 /* 360Video.mp4 in Resources */,
+				66F07D442313BE13009FC3FC /* AnimatedVideo.mp4 in Resources */,
+				66215F7C230BB8E700A3FAB2 /* OpenSans-Regular.ttf in Resources */,
 				667EE10022DC48F000B7E149 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,11 +527,14 @@
 				6676F22E22E1E22A00572446 /* notifiTblCellClass.swift in Sources */,
 				66A9D33922E585F200DE869C /* CommonFunction.swift in Sources */,
 				667EE12C22DC598900B7E149 /* LogInVC.swift in Sources */,
+				66B597992312E693004C91AD /* LyrcCollViewCellVC.swift in Sources */,
 				667FAB6822DD885D00A02354 /* NotificationVcCell.swift in Sources */,
 				667FAB6622DD883100A02354 /* NotificationVC.swift in Sources */,
 				6698C22522DF417D00E4AB1B /* TblViewCellVC.swift in Sources */,
 				667EE13222DC947000B7E149 /* HomeVC.swift in Sources */,
 				667CA00722DDE9DA00CBD486 /* BadgeVCCell.swift in Sources */,
+				6682B032231CE9B700B4C1A1 /* BillieJean(main)VC.swift in Sources */,
+				6682D5CC230D47F70099A7BD /* SectionVC.swift in Sources */,
 				667EE12E22DC88CF00B7E149 /* SignUpVC.swift in Sources */,
 				66DC36A222E598D800C0BFDF /* GuidedTourVC.swift in Sources */,
 				667CA01122DE034200CBD486 /* FeedbackVC.swift in Sources */,
@@ -519,9 +547,9 @@
 				667EE0FB22DC48F000B7E149 /* AppDelegate.swift in Sources */,
 				667CA00F22DDFCD900CBD486 /* VideoSectionTblVCCell.swift in Sources */,
 				667EE13022DC89DC00B7E149 /* UIViewExtentions.swift in Sources */,
+				6664366C2311AF320086644B /* SectionVCCellTableViewCell.swift in Sources */,
 				667CA00522DDE9B900CBD486 /* BadgeVC.swift in Sources */,
 				66BE3E3422E58E72009E542F /* Alerts.swift in Sources */,
-				6698C22322DF3D9800E4AB1B /* BillieJean(main)VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

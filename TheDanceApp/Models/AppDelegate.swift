@@ -11,6 +11,7 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import GoogleSignIn
 import FacebookCore
+import DropDown
 
 
 @UIApplicationMain
@@ -36,6 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().clientID = "732536532049-2lfhsrr3gfcc142eqv5qfm5bd73d9kga.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self as? GIDSignInDelegate
 
+        DropDown.startListeningToKeyboard()
+       
+        
         return true
     }
 

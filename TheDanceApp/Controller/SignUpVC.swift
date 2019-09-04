@@ -30,6 +30,7 @@ class SignUpVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
+        navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 248/255, green: 189/255, blue: 20/255, alpha: 1)
     }
@@ -106,5 +107,8 @@ class SignUpVC: UIViewController {
         
         return  returnValue
 }
+    
+    
+    
     
 }

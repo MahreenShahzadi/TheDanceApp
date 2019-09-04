@@ -21,7 +21,12 @@ class ProfileVC: UIViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 248/255, green: 189/255, blue: 20/255, alpha: 1)
     }
   
-
+    @IBAction func bckBtnClk(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
     @IBAction func resetPassBtnClk(_ sender: Any) {
         
         

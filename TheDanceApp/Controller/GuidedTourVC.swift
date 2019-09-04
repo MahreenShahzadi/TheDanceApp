@@ -32,10 +32,16 @@ class GuidedTourVC: UIViewController {
     
     @IBAction func guidTourBtnClick(_ sender: Any) {
         
-        let vc = storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
-        navigationController?.pushViewController(vc, animated: true)
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "VideoSectionTblVC") as! VideoSectionTblVC
+//        navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func dFBtnClk(_ sender: Any) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "BillieJean_main_VC") as! BillieJean_main_VC
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
     
     @IBAction func slctLangBtnClick(_ sender: Any) {
     }

@@ -15,35 +15,55 @@ class HomeVC: UIViewController {
     @IBOutlet weak var homeTableView: UITableView!
     
     var videoView:UIView?
-    let array = ["Lesson 1","Lesson 2","Lesson 3","Lesson 4","Lesson 5","Lesson 6","Lesson 7"]
+    let secName = ["Lesson 1","Lesson 2","Lesson 3","Lesson 4","Lesson 5","Lesson 6","Lesson 7"]
+    let secItem = [["Section 1","Section 2","Section 3","Section 4","Section 5"],["Section 1","Section 2","Section 3","Section 4","Section 5"],["Section 1","Section 2","Section 3","Section 4","Section 5"],["Section 1","Section 2","Section 3","Section 4","Section 5"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
 
         
         sideBar()
         
     }
-    
+
+   let  sectionNames = ["Lesson 1","Lesson 2","Lesson 3","Lesson 4","Lesson 5","Lesson 6","Lesson 7"]
     override var shouldAutorotate: Bool {
+        
         return true
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
        super.viewWillAppear(animated)
+    
+      // setUpMenuButton()
+        
         navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.setNavigationBarHidden(false, animated: true)
        self.navigationController?.navigationBar.barTintColor = UIColor(red: 248/255, green: 189/255, blue: 20/255, alpha: 1)
 //        let value = UIInterfaceOrientation.landscapeLeft.rawValue
 //        UIDevice.current.setValue(value, forKey: "orientation")
 //
+        
+    }
+    
+   
+    @IBAction func bckBtnClk(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
        
+
+        
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 248/255, green: 189/255, blue: 20/255, alpha: 1)
     }
 
+   
+    
+    
     func sideBar()
     {
         let menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as! UISideMenuNavigationController
@@ -65,7 +85,7 @@ extension HomeVC:UITableViewDelegate{
         if indexPath.row == 0{
         
         
-            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "VideoSectionTblVC") as? VideoSectionTblVC
+            let  VC = self.storyboard?.instantiateViewController(withIdentifier: "SectionVC") as? SectionVC
             self.navigationController?.pushViewController(VC!, animated: true)
     }
     }
@@ -73,15 +93,19 @@ extension HomeVC:UITableViewDelegate{
 }
 
 extension HomeVC:UITableViewDataSource{
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return array.count
-        
+       return secName.count
     }
+    
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeVCCell
         
-        cell.cellNameLbl.text = array[indexPath.row]
+        cell.cellNameLbl.text = secName[indexPath.row]
         cell.selectionStyle = .none
         
         return cell

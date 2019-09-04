@@ -24,6 +24,11 @@ class NotificationVC: UIViewController {
         
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 248/255, green: 189/255, blue: 20/255, alpha: 1)
     }
+    
+    @IBAction func bckBtnClk(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }
 extension NotificationVC:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
